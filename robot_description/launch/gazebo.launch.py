@@ -76,7 +76,7 @@ def generate_launch_description():
         output="screen",
     )
 
-    rviz_config_file = os.path.join(bringup_dir, 'config', 'config.rviz')
+    rviz_config_file = os.path.join(bringup_dir, 'config', 'gazebo.rviz')
     rviz_node = Node(
         package='rviz2',
         executable='rviz2',

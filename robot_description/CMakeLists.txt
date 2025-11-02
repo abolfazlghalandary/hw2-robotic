@@ -16,9 +16,7 @@ find_package(tf2 REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(std_msgs REQUIRED)
-# uncomment the following section in order to fill in
-# further dependencies manually.
-# find_package(<dependency> REQUIRED)
+
 add_executable(frame_id_converter_node scripts/frame_id_converter.cpp)
 ament_target_dependencies(frame_id_converter_node rclcpp sensor_msgs)
 
@@ -36,7 +34,6 @@ ament_target_dependencies(ekf_diff_imu_node
   tf2_ros
   geometry_msgs
 )
-
 
 install(
   DIRECTORY src launch rviz config world scripts
